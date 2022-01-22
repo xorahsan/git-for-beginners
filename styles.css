@@ -1,7 +1,37 @@
 /* all css codings */
 
-.main_container{
-    color: black;
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(16, 16, 32) !important;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main_title{
+    font-size: 60px;
+    padding: 0;
+    margin: 20px auto;
     text-align: center;
-    background: rgb(0, 12, 123);
+    margin-bottom: 50px;
+}
+
+.command_div{
+    background: rgba(109, 106, 117, 0.15);
+    width: 80% !important;
+    backdrop-filter: blur(20px);
+    border: 3px solid white;
+    border-radius: 30px;
+    margin:  20px auto;
+    padding: 20px;
+}
+
+.command_div div{
+    text-align: center;
+}
+.command_div img{
+    margin:  0;
+    padding: 0;
+    
+    width: 800px;
 }

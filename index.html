@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git for begginers!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
-        ads
+
+        <h1 id="main_title">Git for beginners!</h1>
+
+        <div class="command_div">
+            <h1>0. git init</h1>
+            <p>For the first time for creating a git directory, it must be called. It is used to initilazie Git in current direcoty.</b></p>
+        </div>
+
+        <div class="command_div">
+            <h1>1. git status</h1>
+            <p>It is used to see what is the status of current git direcoty.<br>For example: <b>git status</b></p>
+            <p>There are 4 types of git status:</p>
+            <ul>
+                &nbsp; &nbsp;<li><b>Untracked:</b> there is a new file for git which git never initilazied in past.</li>
+
+                &nbsp; &nbsp;<li><b>Unmodified:</b> All files are commited and ready for edit. </li>
+
+                &nbsp; &nbsp;<li><b>Modified:</b> Someone has modified the given file which was not commited. </li>
+
+                &nbsp; &nbsp;<li><b>Stagged:</b> Git has added files to stage where they will get commit.</li>
+
+            </ul>
+            <p>
+                For more info, seek through the following image:
+            </p>
+            <div>
+                <img src="./git_status_image.png" id="git_status_image">
+            </div>
+        </div>
+
+        <div class="command_div">
+        <h1>2. git add</h1>
+        <p>It is used to add files to Stagged Area at "that instant" only.</p>
+        <ol>
+            &nbsp; &nbsp;<li><b>${ git add }</b>: Add the mentioned file to Stagged Area. <br>For example: <b>git add index.html</b></li>
+
+            &nbsp; &nbsp;<li><b>${ git add -A}</b>: Add all files to Stagged Area in the given directory. </li>
+
+        </ol>
+        </div>
+
+        <div class="command_div">
+            <h1>3. git commit</h1>
+            <p>It is used to save an snapeshot of directory at that instant.</p>
+            <ol>
+                &nbsp; &nbsp;<li><b>${ git commit }</b>: Open Vim editor for writing change log, and then you can write by pressing i and then exit by pressing ESC then typing :wq.</li>
+    
+                &nbsp; &nbsp;<li><b>${ git add -m}</b>: Instead of opening Vim, this will commit the files with the log which you wrote after -m in double quotes.  <br>For example: <b>git commit -m "Initial Commit"</b></li>
+    
+            </ol>
+        </div>
+
+
+
+        
+        
+        
+
+
+
     </div>
 </body>
 </html>
