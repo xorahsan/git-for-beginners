@@ -69,12 +69,12 @@
 
 
         <div class="command_div">
-            <h1>3. git checkout</h1>
-            <p>It is used to update fies as according to last commit. However, it does not get you back deleted files. If one changes the code and make it worse, then this command can be used to revert changes to what was commited at the last time.</p>
+            <h1>4. git checkout</h1>
+            <p>It is used to update fies as according to last commit. Moreever, it does get you back deleted files. If one changes the code and make it worse, then this command can be used to revert changes to what was commited at the last time.</p>
             <ol>
-                &nbsp; &nbsp;<li><b>${ git checkout }</b>: Revert the changes of mentioned file to the last commit as what git checkout command does.<br>For example: <b>git checkout app.js</b></li>
+                &nbsp; &nbsp;<li><b>${ git checkout }</b>: Revert the changes of mentioned file to the last commit as what git checkout command does. It can also get your deleted files back. <br>For example: <b>git checkout app.js</b></li>
     
-                &nbsp; &nbsp;<li><b>${ git add -m}</b>: Instead of opening Vim, this will commit the files with the log which you wrote after -m in double quotes.  <br>For example: <b>git commit -m "Initial Commit"</b></li>
+                &nbsp; &nbsp;<li><b>${ git checkout -f}</b>: Instead of checking out files one by one. The best way to is to use this commands. This will revert changes for all files in current working direcoty.  <br>For example: <b>git commit -f</b></li>
     
             </ol>
         </div>
