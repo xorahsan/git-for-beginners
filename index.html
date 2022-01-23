@@ -21,6 +21,14 @@
         <div class="command_div">
             <h1>1. git status</h1>
             <p>It is used to see what is the status of current git direcoty.<br>For example: <b>git status</b></p>
+
+            <ol>
+                &nbsp; &nbsp;<li><b>${ git status }</b>: This command shows decriptive format of current files status in Git repository. <br>For example: <b>git status</b></li>
+    
+                &nbsp; &nbsp;<li><b>${ git status -s }</b>: This command breifly shows current files status in Git repository. <br>For example: <b>git status -s</b></li>
+
+            </ol>
+
             <p>There are 4 types of git status:</p>
             <ul>
                 &nbsp; &nbsp;<li><b>Untracked:</b> there is a new file for git which git never initilazied in past.</li>
@@ -103,6 +111,17 @@
                 &nbsp; &nbsp;<li><b>${ git diff }</b>: It simpally shows the difference between current code and the code which was comitted last time. <br>For example: <b>git diff</b></li>
     
                 &nbsp; &nbsp;<li><b>${ git diff --staged }</b>: It simpally shows the difference between current code and the code which are in now Stagged Area. <br>For example: <b>git log --staged</b></li>
+
+            </ol>
+        </div>
+
+        <div class="command_div">
+            <h1>7. git rm</h1>
+            <p>It is used to remove file from git repository and current directory. We can customize it by adding some flags.</p>
+            <ol>
+                &nbsp; &nbsp;<li><b>${ git rm }</b>: It simpilly delete the mentioned file from git and current directory. <br>For example: <b>git rm app.js</b></li>
+    
+                &nbsp; &nbsp;<li><b>${ git rm --cached }</b>: It deletes the specified file from Git, but not from current directory. It means that the file will be untracked for Git after deleting it from this commands. <br>For example: <b>git rm --cached index.html</b></li>
 
             </ol>
         </div>
