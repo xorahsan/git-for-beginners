@@ -62,7 +62,9 @@
             <ol>
                 &nbsp; &nbsp;<li><b>${ git commit }</b>: Open Vim editor for writing change log, and then you can write by pressing i and then exit by pressing ESC then typing :wq.</li>
     
-                &nbsp; &nbsp;<li><b>${ git add -m}</b>: Instead of opening Vim, this will commit the files with the log which you wrote after -m in double quotes.  <br>For example: <b>git commit -m "Initial Commit"</b></li>
+                &nbsp; &nbsp;<li><b>${ git commit -m}</b>: Instead of opening Vim, this will commit the files with the log which you wrote after -m in double quotes.  <br>For example: <b>git commit -m "Initial Commit"</b></li>
+
+                &nbsp; &nbsp;<li><b>${ git commit -am}</b>: Instead of adding all files to Stagged Area, then comitting them, you can just do it directly by this command.   <br>For example: <b>git commit -am "Update index.html"</b></li>
     
             </ol>
         </div>
@@ -78,11 +80,22 @@
     
             </ol>
         </div>
-        
-        
-        
 
+        <div class="command_div">
+            <h1>5. git log</h1>
+            <p>It is used to check change log of current git repository. It includes an SHA-256 hash to uniquely identify each commit. In addition to it, it also shows the person name and email who comitted the code with exact time. A brief message of commit was also given in git log.</p>
+            <ol>
+                &nbsp; &nbsp;<li><b>${ git log }</b>: It simpally shows the following details: A unique hash related to each commit, Name and Email of person who commited the code along with exact time, and a breif change log message which we give during commit.<br>For example: <b>git log</b></li>
+    
+                &nbsp; &nbsp;<li><b>${ git log --oneline }</b>: It breifly shows oneline log for each commit. It only shows hashes and the text which we give during commiting any repository.  <br>For example: <b>git log --oneline</b></li>
+    
+                &nbsp; &nbsp;<li><b>${ git log -n }</b>: If we wanna filter out git log output to any recent number of commit, then we can just add git log -n and then the number of commits logs which we wanna see. <br>For example: <b>git log -n 3</b></li> 
 
+                &nbsp; &nbsp;<li><b>${ git log -p }</b>: This command gives details of every commit. We can also limit the number of output by adding the total number of output flags. <br>For example: <b>git log -p -3</b></li>
+
+            </ol>
+        </div>
+        
 
     </div>
     <p id="end_credits">Made with <i class="fas fa-heart"></i> by Ahsan Azeemi</p>
