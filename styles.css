@@ -36,3 +36,10 @@ body{
     
     width: 800px;
 }
+#end_credits{
+    text-align: center;
+    font-weight: bold;
+}
+#end_credits i{
+    color: red;
+}
