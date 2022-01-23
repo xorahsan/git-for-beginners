@@ -1,0 +1,16 @@
+# /Music/check.docx will be ignored, but not the other Items in Music folder
+
+Music/check.docx
+
+# Music/ will be ignored - the whole folder and items in it
+
+Music/
+
+# individual file can be ignored
+
+Urdu citations.pdf
+jarvis.txt
+
+# all files with the same extension can be ignored
+
+*.pdf
