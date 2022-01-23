@@ -22,8 +22,9 @@ body{
     backdrop-filter: blur(20px);
     border: 3px solid white;
     border-radius: 30px;
-    margin:  20px auto;
+    margin:  30px auto;
     padding: 20px;
+    font-size: 19px !important;
 }
 
 .command_div div{
