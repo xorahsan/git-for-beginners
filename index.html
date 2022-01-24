@@ -109,7 +109,7 @@
             <h1>6. git log</h1>
             <p>It is used to check change log of current git repository. It includes an SHA-256 hash to uniquely identify each commit. In addition to it, it also shows the person name and email who comitted the code with exact time. A brief message of commit was also given in git log.</p>
             <ol>
-                &nbsp; &nbsp;<li><b>${ git log }</b>: It simpally shows the following details: A unique hash related to each commit, Name and Email of person who commited the code along with exact time, and a breif change log message which we give during commit.<br>For example: <b>git log</b></li>
+                &nbsp; &nbsp;<li><b>${ git log }</b>: It simpily shows the following details: A unique hash related to each commit, Name and Email of person who commited the code along with exact time, and a breif change log message which we give during commit.<br>For example: <b>git log</b></li>
     
                 &nbsp; &nbsp;<li><b>${ git log --oneline }</b>: It breifly shows oneline log for each commit. It only shows hashes and the text which we give during commiting any repository.  <br>For example: <b>git log --oneline</b></li>
     
@@ -124,9 +124,9 @@
             <h1>7. git diff</h1>
             <p>It is used to check difference between current code to the code which was comitted last time. We can also change the difference between current code to stagged area code using some flags.</p>
             <ol>
-                &nbsp; &nbsp;<li><b>${ git diff }</b>: It simpally shows the difference between current code and the code which was comitted last time. <br>For example: <b>git diff</b></li>
+                &nbsp; &nbsp;<li><b>${ git diff }</b>: It simpily shows the difference between current code and the code which was comitted last time. <br>For example: <b>git diff</b></li>
     
-                &nbsp; &nbsp;<li><b>${ git diff --staged }</b>: It simpally shows the difference between current code and the code which are in now Stagged Area. <br>For example: <b>git log --staged</b></li>
+                &nbsp; &nbsp;<li><b>${ git diff --staged }</b>: It simpily shows the difference between current code and the code which are in now Stagged Area. <br>For example: <b>git log --staged</b></li>
 
             </ol>
         </div>
@@ -135,7 +135,7 @@
             <h1>8. git rm</h1>
             <p>It is used to remove file from git repository and current directory. We can customize it by adding some flags.</p>
             <ol>
-                &nbsp; &nbsp;<li><b>${ git rm }</b>: It simpilly delete the mentioned file from git and current directory. <br>For example: <b>git rm app.js</b></li>
+                &nbsp; &nbsp;<li><b>${ git rm }</b>: It simpily delete the mentioned file from git and current directory. <br>For example: <b>git rm app.js</b></li>
     
                 &nbsp; &nbsp;<li><b>${ git rm --cached }</b>: It deletes the specified file from Git, but not from current directory. It means that the file will be untracked for Git after deleting it from this commands. <br>For example: <b>git rm --cached index.html</b></li>
 
@@ -165,6 +165,29 @@
             </ul>
 
         </div>
+
+        <div class="command_div">
+            <h1>10. git branch</h1>
+            <p>Comitting codes directly to master/main branch is never a good idea/best practice. Instead, make branch of existing code, then edit, if approved by your reviewer, then merge to main branch.</p>
+            <ol>
+                &nbsp; &nbsp;<li><b>${ git branch }</b>: The simple ${ git branch } command will show all branches of current repository.It simply create a branch which is a clone of main/master branch. <br>For example: <b>git branch fixed_xss_vuln</b><br><b><br>Important:</b> One should pull code from remote repo, then create new branch, so that it will minimize pull request conflicts. </li>
+    
+                &nbsp; &nbsp;<li><b>${ git checkout }</b>: It is used to switch between branches. Please note that the simple ${ git checkout - } will switch to the last branch. Otherwise, you can manually change branch. <br>For example: <b>git checkout fixed_bug_05</b></li>
+
+                &nbsp; &nbsp;<li><b>${ git checkout -b }</b>: Instead of creating a branch, and entering it by checkout command. It can be done by one command. <br>For example: <b>git checkout -b fixed_issue_192</b></li>
+
+                &nbsp; &nbsp;<li><b>${ git branch -d }</b>: When the branch is merged with the master branch, then just delete it using this command. <br>For example: <b>git branch -d fixed_issue_192</b></li>
+
+            </ol>
+        </div>
+
+        <div class="command_div">
+            <h1>
+                Important!
+            </h1>
+            <p>Instead of directly merging branch to main branch from Git. The best practice it to push the remote repository[Github], then create a pull request then merge it. Therefore, push branches to remote repository individually by simple <b>${ git push }</b> command</p>
+        </div>
+
 
     </div>
     <p id="end_credits">Made with <i class="fas fa-heart"></i> by Ahsan Azeemi</p>
