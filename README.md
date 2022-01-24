@@ -4,4 +4,4 @@ A site which tells you basic information and commands of Git, or you can say "Gi
 
 Here's how it looks like:
 
-![screenshot-ahsanazeemi github io-2022 01 24-14_17_25](https://user-images.githubusercontent.com/64397746/150754835-9b647303-3b83-4982-8121-dac990ad9ce6.png)
+![screenshot-ahsanazeemi github io-2022 01 24-15_54_50](https://user-images.githubusercontent.com/64397746/150770496-fb2bad4f-8c13-4a29-8585-096aba234362.png)
