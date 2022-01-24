@@ -14,12 +14,27 @@
         <h1 id="main_title">Git for beginners!</h1>
 
         <div class="command_div">
-            <h1>0. git init</h1>
+            <h1>0. Add Name and Email</h1>
+            <p>Whenever we commit some code, so we saw our name and email for identifing that which commit is done by which person. It's usually vital if one is working with Tech gaints like Facebook.</p>
+            <h2>Set your email and name for the first time using Git:</h2>
+            <ul>
+                <li>
+                    <b>${ git config --global user.name Ahsan\ Azeemi }</b>: This command will set the username to Ahsan Azeemi, and whenever this user commit something, this name will append to the output.
+                </li>
+                <li>
+                    <b>${ git config --global user.email ahsanazeemiofficial@gmail.com }</b>: This command will set the useremail to ahsanazeemiofficial@gmail.com, and whenever this user commit something, this email will also append to the output.
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="command_div">
+            <h1>1. git init</h1>
             <p>For the first time for creating a git directory, it must be called. It is used to initilazie Git in current directory.<br>For example: <b>git init</b></p>
         </div>
 
         <div class="command_div">
-            <h1>1. git status</h1>
+            <h1>2. git status</h1>
             <p>It is used to see what is the status of current git direcoty.<br>For example: <b>git status</b></p>
 
             <ol>
@@ -54,7 +69,7 @@
         </div>
 
         <div class="command_div">
-        <h1>2. git add</h1>
+        <h1>3. git add</h1>
         <p>It is used to add files to Stagged Area at "that instant" only.</p>
         <ol>
             &nbsp; &nbsp;<li><b>${ git add }</b>: Add the mentioned file to Stagged Area. <br>For example: <b>git add index.html</b></li>
@@ -65,7 +80,7 @@
         </div>
 
         <div class="command_div">
-            <h1>3. git commit</h1>
+            <h1>4. git commit</h1>
             <p>It is used to save an snapeshot of directory at that instant.</p>
             <ol>
                 &nbsp; &nbsp;<li><b>${ git commit }</b>: Open Vim editor for writing change log, and then you can write by pressing i and then exit by pressing ESC then typing :wq.</li>
@@ -79,7 +94,7 @@
 
 
         <div class="command_div">
-            <h1>4. git checkout</h1>
+            <h1>5. git checkout</h1>
             <p>It is used to update fies as according to last commit. Moreever, it does get you back deleted files. If one changes the code and make it worse, then this command can be used to revert changes to what was commited at the last time.</p>
             <ol>
                 &nbsp; &nbsp;<li><b>${ git checkout }</b>: Revert the changes of mentioned file to the last commit as what git checkout command does. It can also get your deleted files back. <br>For example: <b>git checkout app.js</b></li>
@@ -90,7 +105,7 @@
         </div>
 
         <div class="command_div">
-            <h1>5. git log</h1>
+            <h1>6. git log</h1>
             <p>It is used to check change log of current git repository. It includes an SHA-256 hash to uniquely identify each commit. In addition to it, it also shows the person name and email who comitted the code with exact time. A brief message of commit was also given in git log.</p>
             <ol>
                 &nbsp; &nbsp;<li><b>${ git log }</b>: It simpally shows the following details: A unique hash related to each commit, Name and Email of person who commited the code along with exact time, and a breif change log message which we give during commit.<br>For example: <b>git log</b></li>
@@ -105,7 +120,7 @@
         </div>
         
         <div class="command_div">
-            <h1>6. git diff</h1>
+            <h1>7. git diff</h1>
             <p>It is used to check difference between current code to the code which was comitted last time. We can also change the difference between current code to stagged area code using some flags.</p>
             <ol>
                 &nbsp; &nbsp;<li><b>${ git diff }</b>: It simpally shows the difference between current code and the code which was comitted last time. <br>For example: <b>git diff</b></li>
@@ -116,7 +131,7 @@
         </div>
 
         <div class="command_div">
-            <h1>7. git rm</h1>
+            <h1>8. git rm</h1>
             <p>It is used to remove file from git repository and current directory. We can customize it by adding some flags.</p>
             <ol>
                 &nbsp; &nbsp;<li><b>${ git rm }</b>: It simpilly delete the mentioned file from git and current directory. <br>For example: <b>git rm app.js</b></li>
@@ -127,7 +142,7 @@
         </div>
 
         <div class="command_div">
-            <h1>8. Git Ignore</h1>
+            <h1>9. Git Ignore</h1>
             <p>It is used to ignore those files which we don't wanna commit. For example, node_modules is generally ignored while commiting and pushing/pulling files with server.</p>
             <h2>Method to create a .gitignore file:</h2>
             <ol>
